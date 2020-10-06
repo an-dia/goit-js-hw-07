@@ -31,10 +31,9 @@ listGalleryEl.classList.add("list-gallery");
 
 console.log(listGalleryEl);
 
-listGalleryEl.insertAdjacentHTML(
-  "afterbegin",
-  images.reduce((acc, { url, alt }) => {
-    acc += `<li class='item-gallery'><img class='img-gallery' src='${url}' alt='${alt}' width='450 px'/></li>`;
-    return acc;
-  }, "")
-);
+const arrayImages = images.reduce((acc, { url, alt }) => {
+  acc += `<li class='item-gallery'><img class='img-gallery' src='${url}' alt='${alt}' width='450 px'/></li>`;
+  return acc;
+}, "");
+
+listGalleryEl.insertAdjacentHTML("afterbegin", arrayImages);
