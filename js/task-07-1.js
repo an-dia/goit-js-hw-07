@@ -20,9 +20,3 @@ const textEl = itemsEl.forEach((item) =>
     Количество элементов: ${item.lastElementChild.children.length}`
   )
 );
-// const itemsEl = document.querySelectorAll("li.item").forEach((item) =>
-//   console.log(
-//     `Категория: ${item.firstElementChild.textContent}
-//     Количество элементов: ${item.lastElementChild.children.length}`
-//   )
-// );
