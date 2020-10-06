@@ -1,0 +1,32 @@
+.list-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.item-gallery {
+  list-style: none;
+  transition: transform 200ms ease-in-out;
+}
+
+.item-gallery:hover {
+  transform: translateY(110px);
+}
+.img-gallery {
+  display: block;
+}
+
+/* -------------- */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
